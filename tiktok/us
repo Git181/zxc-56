@@ -7,7 +7,3 @@ hostname = *.tiktokv.com, *.byteoversea.com, *.musical.ly, *.snssdk.com
 (?<=&app_version=)1[6-9]..(?=.?.?&) url 307 17..
 (?<=\?version_code=)1[6-9]..(?=.?.?&) url 307 17..
 
-
-
-#抖音锁
-(?<=&mcc_mnc=)4 url 307 2
