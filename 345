@@ -1,3 +1,5 @@
 DOMAIN, mazu.m.qq.com,REJECT
 
 host-suffix, mazu.m.qq.com, reject
+
+host-suffix, sdkconfig.video.qq.com , reject
