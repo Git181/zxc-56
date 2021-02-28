@@ -1,4 +1,4 @@
-DOMAIN, mazu.m.qq.com,REJECT
+DOMAIN, iacc.qq.com,REJECT
 
 host-suffix, mazu.m.qq.com, reject
 
