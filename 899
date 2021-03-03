@@ -1,1 +1,32 @@
-c3NyOi8vZFhNd05DNXdhbW91YkdsbVpUb3hNak16TkRwaGRYUm9YMkZsY3pFeU9GOXphR0V4T21GbGN5MHhNamd0WTJaaU9uQnNZV2x1T21OSGNIRk1iVGwxV2xFdlAzSmxiV0Z5YTNNOU5sb3RjRFZhZFRrNFNpMUljMUJEWm1nM1kzZE5VU1p3Y205MGIzQmhjbUZ0UFU1RVJUQlBWR2Q0VFVSbk5rMVVhR2hOUjFwcFRWZFJkRTVxUlRWT1F6QXdUVlJqZWt4VVozaE5WMVYwVGpKTk1rMVVZM3BaZW1jeldWUkdhU1p2WW1aemNHRnlZVzA5CnNzcjovL2Myc3dNUzV3YW1vdWJHbG1aVG94TWpNek5EcGhkWFJvWDJGbGN6RXlPRjl6YUdFeE9tRmxjeTB4TWpndFkyWmlPbkJzWVdsdU9tTkhjSEZNYlRsMVdsRXZQM0psYldGeWEzTTlObG90Y0RWYWRUazRTaTFJYzFCRFptZzNZM2ROWnlad2NtOTBiM0JoY21GdFBVNUVSVEJQVkdkNFRVUm5OazFVYUdoTlIxcHBUVmRSZEU1cVJUVk9RekF3VFZSamVreFVaM2hOVjFWMFRqSk5NazFVWTNwWmVtY3pXVlJHYVNadlltWnpjR0Z5WVcwOQpzc3I6Ly9jMnN3TWk1d2Ftb3ViR2xtWlRveE1qTXpORHBoZFhSb1gyRmxjekV5T0Y5emFHRXhPbUZsY3kweE1qZ3RZMlppT25Cc1lXbHVPbU5IY0hGTWJUbDFXbEV2UDNKbGJXRnlhM005TmxvdGNEVmFkVGs0U2kxSWMxQkRabWczWTNkTmR5WndjbTkwYjNCaGNtRnRQVTVFUlRCUFZHZDRUVVJuTmsxVWFHaE5SMXBwVFZkUmRFNXFSVFZPUXpBd1RWUmpla3hVWjNoTlYxVjBUakpOTWsxVVkzcFplbWN6V1ZSR2FTWnZZbVp6Y0dGeVlXMDkK
+/**
+ * @fileoverview Template to compose HTTP reqeuest.
+ * 
+ */
+
+const url = `https://iacc.qq.com/`;
+const method = `POST`;
+const headers = {
+'Accept-Encoding' : `gzip`,
+'Cookie' : `main_login=qq; vqq_vuserid=707377728; vqq_vusession=K5uSsYjEVCxQ_uksE8bwvQ..; video_omgid=dc4b645179084a47a8a8825e196e24a8590d001011441f; plat_bucketid=507; guid=7b853821830511e99d19a042d48ad00a; vqq_appid=101795054; vqq_openid=FE0CFA16A25A2CE143A9BCFED7E588C3; vqq_access_token=EC4F1FC241D8DB9E2D07036F3BAE8B54; teenGuardSessionCode=46F34B398539786A24B792DD529AEE0EC3C48DB1AA28AF5222CE968FB80DC5123D38B6EC155DDEB1189764261EC4F641F029428FEF5FE2888A89571544222061EE81B48CE77D67C043BD11B4A94B533176137B3AD57064A4C521ABD7F2A7649448049752992EF9A47CBC994C`,
+'Connection' : `keep-alive`,
+'Host' : `iacc.qq.com`,
+'User-Agent' : `qqlive4iphone`,
+'JceGodId' : `25196`
+};
+const body = ``;
+
+const myRequest = {
+    url: url,
+    method: method,
+    headers: headers,
+    body: body
+};
+
+$task.fetch(myRequest).then(response => {
+    console.log(response.statusCode + "\n\n" + response.body);
+    $done();
+}, reason => {
+    console.log(reason.error);
+    $done();
+});
+
