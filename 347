@@ -1,5 +1,33 @@
-DOMAIN, iacc.qq.com,REJECT
 
-host-suffix, mazu.m.qq.com, reject
+/**
+ * @fileoverview Template to compose HTTP reqeuest.
+ * 
+ */
 
-host-suffix, sdkconfig.video.qq.com , reject
+const url = `http://p.l.qq.com/p?oid=3088488294&cid=3088490992&ping_data=EAAoADD7VToAQBxaEDZGOUU2RTExMDU2QkFFNUY_viewid_5HNNGnXWfLXNERruko87f5disrvysNfzlcQqp096S6rvuiOGCCxfdzBtLF7lPBAatlJk7gr8XKEHKX3MTPLFC5KvR_uhNLcjzJukJNXSYfg5Cf01yuZV9KKS9fDjgpf!1Hf0JhbSox88SZUmDFsljZnIeNKmIGfTQOpDNQoSD_9EhFmmCwn6WxAxGBSZHyMf4bPBzmnirZ4GrRsFpR2Ok7rJz1Qz27eY3BViyoE49RWXDw5JSztPQFwLjmsPzsI9xac3OAjugNWFf81CIVfd4kl8khSN8P!cKXgsdGCXngFBS!HrlzTykPoMhiGyeOd0CXfEHqBZBfo&adtype=&appversion=200052&contract=0&i=1&os=1&datatype=jsonp&etype=1000&ch=200000002&seq=1&aseq=1&xp=2&cm2expid=11003&cm2traceid=&pv_type=0&exp=1&calltype=0&conn_type=4&ctle=1&ad_mat_disp_type=1`;
+const method = `GET`;
+const headers = {
+'Accept-Encoding' : `gzip, deflate`,
+'Cookie' : `appuser=6F9E6E11056BAE5F; o_minduid=cKdyuGE4b2Z4pnnfzrDgYUKmfBE35j8l; lv_material_group=; guid=7b853821830511e99d19a042d48ad00a; main_login=qq; plat_bucketid=507; teenGuardSessionCode=CEDE778250A6B3B3E53D9F38A08B1920E3EF092ABBF717BFE8119D62A2A2B8952D5B09A3B8FDE4BCEB22E849DEECF038AF26A3C3C6EEA0DE68FE7257085338298A9291063B392EF079A2A17D86FB1B0D40620BB47E84D81BE52DC6EE3F65D435FB1CBF3F6E4D3047358A9AF8; video_omgid=dc4b645179084a47a8a8825e196e24a8590d001011441f; vqq_access_token=EC4F1FC241D8DB9E2D07036F3BAE8B54; vqq_appid=101795054; vqq_openid=FE0CFA16A25A2CE143A9BCFED7E588C3; vqq_vuserid=707377728; vqq_vusession=K5uSsYjEVCxQ_uksE8bwvQ..; LVINturn=7; LWCZCturn=291; LWHLSturn=944; LWJturn=599; LWSJturn=126; LWZturn=488; pgv_pvid=9242213864; ufc=r15_1_1614425335; gid=598fc993-f269-41d5-b6f7-d71d26c02c74; tvfe_boss_uuid=7681433150370f95`,
+'Connection' : `keep-alive`,
+'Accept' : `*/*`,
+'Host' : `p.l.qq.com`,
+'User-Agent' : `live4iphoneRel/25380 CFNetwork/1209 Darwin/20.2.0`,
+'Accept-Language' : `zh-cn`
+};
+const body = ``;
+
+const myRequest = {
+    url: url,
+    method: method,
+    headers: headers,
+    body: body
+};
+
+$task.fetch(myRequest).then(response => {
+    console.log(response.statusCode + "\n\n" + response.body);
+    $done();
+}, reason => {
+    console.log(reason.error);
+    $done();
+});
