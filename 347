@@ -1,8 +1,4 @@
 
-/**
- * @fileoverview Template to compose HTTP reqeuest.
- * 
- */
 
 const url = `http://p.l.qq.com/p?oid=3088488294&cid=3088490992&ping_data=EAAoADD7VToAQBxaEDZGOUU2RTExMDU2QkFFNUY_viewid_5HNNGnXWfLXNERruko87f5disrvysNfzlcQqp096S6rvuiOGCCxfdzBtLF7lPBAatlJk7gr8XKEHKX3MTPLFC5KvR_uhNLcjzJukJNXSYfg5Cf01yuZV9KKS9fDjgpf!1Hf0JhbSox88SZUmDFsljZnIeNKmIGfTQOpDNQoSD_9EhFmmCwn6WxAxGBSZHyMf4bPBzmnirZ4GrRsFpR2Ok7rJz1Qz27eY3BViyoE49RWXDw5JSztPQFwLjmsPzsI9xac3OAjugNWFf81CIVfd4kl8khSN8P!cKXgsdGCXngFBS!HrlzTykPoMhiGyeOd0CXfEHqBZBfo&adtype=&appversion=200052&contract=0&i=1&os=1&datatype=jsonp&etype=1000&ch=200000002&seq=1&aseq=1&xp=2&cm2expid=11003&cm2traceid=&pv_type=0&exp=1&calltype=0&conn_type=4&ctle=1&ad_mat_disp_type=1`;
 const method = `GET`;
