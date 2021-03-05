@@ -394,3 +394,6 @@ https?:\/\/api\.umer\.com\.cn\/.*getCurrentUmerSign url script-request-header ht
 
 # 太好购 (By id77)
 ^https:\/\/cxdng\.cpic\.com\.cn\/taieshop\/api\/CustomerFansInfo\/GetFansInfo url script-request-header https://raw.githubusercontent.com/id77/QuantumultX/master/task/thg.cookie.js
+# 新浪新闻(By @Macsuny)
+https:\/\/newsapi\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center url script-request-header https://raw.githubusercontent.com/Git181/jb/main/xl
+https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn url script-request-header https://raw.githubusercontent.com/Git181/jb/main/xl
