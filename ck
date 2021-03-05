@@ -266,7 +266,7 @@ https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? url script-reque
 
 # 新浪新闻(By @Macsuny)
 https:\/\/newsapi\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/sinanews.js
-https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/sinanews.js
+https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn url script-request-header https://raw.githubusercontent.com/Git181/jb/main/xl
 
 # > 中青看点极速版 (By @Macsuny)
 https:\/\/\w+\.youth\.cn\/TaskCenter\/(sign|getSign) url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
