@@ -5,7 +5,7 @@
 QX:
 
 #TF输入法解锁会员
-^http:\/\/www\.yjlyjl123\.online\/.+ url script-response-body tfsrf.js
+^http:\/\/yjlyjl123\.online\/.+ url script-response-body tfsrf.js
 
 [mitm]
 hostname = yjlyjl123.online
