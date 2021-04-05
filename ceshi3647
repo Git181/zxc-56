@@ -5,7 +5,7 @@
 QX:
 
 #TF输入法解锁会员
-^http:\/\/api\.1jainlian\. xyz\/.+ url script-response-body tfsrf.js
+^http:\/\/api\.1jainlian\.xyz\/.+ url script-response-body tfsrf.js
 
 [mitm]
 hostname = api.1jainlian.xyz
