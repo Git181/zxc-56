@@ -1,0 +1,51 @@
+/*
+微信公众号：ios黑科技
+官方网站：s7aa.cn
+
+QX:
+
+#TF输入法解锁会员
+^http:\/\/api\.1jainlian\. xyz\/.+ url script-response-body tfsrf.js
+
+[mitm]
+hostname = api.1jainlian.xyz
+
+TF输入法商店搜索下载
+https://apps.apple.com/cn/app/id1537722262
+*/
+
+var obj = JSON.parse($response.body);
+
+{
+  "code": 0,
+  "message": "执行成功",
+  "data": {
+    "shareCodeStr": "WWHH6G",
+    "shareCode": "41507134",
+    "username": "AE4E8125-67E3-485A-9647-0FA6EE8337A0",
+    "phone": "AE4E8125-67E3-485A-9647-0FA6EE8337A0",
+    "email": "",
+    "promotionChannelId": "178257641941499904",
+    "secretKey": "ef47fdf7-ca54-40e0-9997-20f9194f3abf",
+    "expired": false,
+    "paying": false,
+    "expireTime": "2121-03-05 13:30:25",
+    "loginTime": "2021-03-29 13:25:06",
+    "createTime": "2021-02-18 01:34:55",
+    "signedToday": false,
+    "signedDays": 0,
+    "signedDuration": 0,
+    "signInfo": {
+      "signedToday": false,
+      "signedDays": 0,
+      "signedAward": "签到赠送套餐"
+    },
+    "packagesBalance": {
+      "usedDataTraffic": 2510.78,
+      "totalDataTraffic": 910272
+    },
+    "userId": "414595608838406144"
+  }
+}
+
+$done({body: JSON.stringify(obj)}); 
