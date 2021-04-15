@@ -1,7 +1,0 @@
-hostname = www.google.com ,api.abema.io
-
-# Redirect Google Search Service
-^(http|https):\/\/(www.)?(g|google)\. com.hkurl 302 https://www.google.com
-
-# Redirect Google Maps Service
-^(http|https):\/\/(ditu|maps).google\. com.hk url 302 https://maps.google.com
